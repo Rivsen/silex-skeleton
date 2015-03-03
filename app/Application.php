@@ -210,15 +210,15 @@ class Application extends BaseApplication
             )
         );
 
-        /**
-         * app extend
-         */
-        $app->register(new Rswork\Silex\RouterProvider());
-
         // others services register in here
         // ...
 
         $app->error( array($this, 'onError') );
+
+        /**
+         * app extend
+         */
+        $app->register(new Rswork\Silex\RouterProvider());
     }
 
     public function getName()
