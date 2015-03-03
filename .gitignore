@@ -1,0 +1,44 @@
+*~
+*.swap
+*.swp
+*.bak
+*.mwb
+*.patch
+test/
+
+# Cache and logs
+/var/cache/*
+/var/log/*
+!var/cache/.gitkeep
+!var/log/.gitkeep
+
+# Managed by Composer
+/bin/
+!/bin/console
+/var/vendor/
+
+# Assets and user uploads
+/www/uploads/
+
+# PHPUnit
+/app/phpunit.xml
+
+# Composer PHAR
+/composer.phar
+/composer.lock
+
+.DS_Store
+/.idea
+/.tags
+/.tags_sorted_by_file
+Gemfile.lock
+
+# Ctags Phpcomplete Files
+/tags
+/.phpcomplete_extended/
+
+# ignore doctrine cli-config.php file
+/cli-config.php
+
+# ignore some test files
+TestCommand.php

@@ -1,0 +1,40 @@
+{
+    "name": "rswork/silex-skeleton",
+    "require": {
+        "silex/silex": "~1.2",
+        "symfony/twig-bridge": "~2.6",
+        "symfony/validator": "~2.6",
+        "symfony/config": "~2.6",
+        "symfony/translation": "~2.6",
+        "symfony/security": "~2.6",
+        "swiftmailer/swiftmailer": "~5.3",
+        "symfony/yaml": "~2.6",
+        "doctrine/dbal": "~2.5",
+        "jms/serializer-service-provider": "dev-develop",
+        "symfony/console": "~2.6",
+        "rswork/combine-service-provider": "~1.0",
+        "symfony/monolog-bridge": "~2.6",
+        "monolog/monolog": "~1.12"
+    },
+    "require-dev": {
+        "silex/web-profiler": "~1.0",
+        "sorien/silex-dbal-profiler": "~1.1",
+        "rswork/ladybug-service-provider": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Rivsen Tan",
+            "email": "rivsen1003@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rswork\\Silex\\": [ "src/", "app/" ]
+        }
+    },
+    "config": {
+        "process-timeout": 3600,
+        "bin-dir": "bin",
+        "vendor-dir": "var/vendor/"
+    }
+}

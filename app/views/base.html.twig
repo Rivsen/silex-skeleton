@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>{% if title is defined and title is not empty %}{{ title }}{% else %}Rswork Silex Skeleton Demo{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobileoptimized" content="320" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#4353CD" />
+    {% block css %}{% endblock %}
+    {% block headjs %}{% endblock %}
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+    {% block footjs %}{% endblock %}
+  </body>
+</html>

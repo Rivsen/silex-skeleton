@@ -1,0 +1,5 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    {% if app.debug == true %}<h1>{{ code ~ ', '~msg }}</h1>{%else%}{{ code }}{% endif %}
+{% endblock content %}
