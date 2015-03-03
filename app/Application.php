@@ -168,7 +168,7 @@ class Application extends BaseApplication
             'serializer.cache.directory' => $app['kernel.cache_dir'].'/jms',
         ));
 
-        /*
+        /**
          * register validator
          */
         $app->register( new Silex\Provider\ValidatorServiceProvider() );
@@ -182,11 +182,17 @@ class Application extends BaseApplication
             $app['web_profiler.toolbar'] = true;
             $app['web_profiler.debug_toolbar.position'] = 'bottom';
 
-            /*
+            /**
              * register ladybug as service
              */
             $app->register( new Rswork\Silex\Provider\LadybugServiceProvider() );
-            $app->register(new Sorien\Provider\DoctrineProfilerServiceProvider());
+
+            /**
+             * register doctrine profiler toolbar
+             */
+            if( isset( $app['config'] ) AND isset( $app['config']['dbs'] ) ) {
+                $app->register(new Sorien\Provider\DoctrineProfilerServiceProvider());
+            }
         }
 
         /**
