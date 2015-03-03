@@ -1,5 +1,8 @@
 {
     "name": "rswork/silex-skeleton",
+    "description": "Silex microframework",
+    "license": "MIT",
+    "type": "project",
     "require": {
         "silex/silex": "~1.2",
         "symfony/twig-bridge": "~2.6",
@@ -36,5 +39,11 @@
         "process-timeout": 3600,
         "bin-dir": "bin",
         "vendor-dir": "var/vendor/"
+    },
+    "scripts": {
+        "run" : [
+            "echo 'Started web server on http://localhost:8888'",
+            "php -S localhost:8888 -t www www/index_dev.php"
+        ]
     }
 }
