@@ -22,7 +22,9 @@
     "require-dev": {
         "silex/web-profiler": "~1.0",
         "sorien/silex-dbal-profiler": "~1.1",
-        "rswork/ladybug-service-provider": "dev-master"
+        "rswork/ladybug-service-provider": "dev-master",
+        "symfony/browser-kit": "~2.6",
+        "symfony/css-selector": "~2.6"
     },
     "authors": [
         {
@@ -32,7 +34,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Rswork\\Silex\\": [ "src/", "app/" ]
+            "Rswork\\Silex\\": [ "src/", "app/" ],
+            "Rswork\\Silex\\Tests\\": ["tests/"]
         }
     },
     "config": {
