@@ -25,10 +25,11 @@ Composer 会创建一个新的 Silex 项目在 `path/to/install` 目录里。
 
 ```
 $ cd path/to/install
+$ phpunit
 $ composer run
 ```
 
-然后大开浏览器并访问 http://localhost:8888/demo
+然后打开浏览器并访问 http://localhost:8888/demo
 
 Silex 入门
 --------------------------
